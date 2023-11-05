@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         try {
             // Send a POST request using Axios with async/await
-            const response = await axios.post('https://port-backend-w6h2.onrender.com', formData);
+            const response = await axios.post('https://port-backend-w6h2.onrender.com/addContact', formData);
             responseDiv.innerHTML = "Message sent successfully!";
             contactForm.reset(); // Clear the form
         } catch (error) {
